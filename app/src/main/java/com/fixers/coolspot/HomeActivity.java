@@ -83,6 +83,7 @@ public class HomeActivity extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
@@ -96,6 +97,12 @@ public class HomeActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+
+        if(id == R.id.admin_dash){
+
+            Intent adminDash = new Intent(getApplicationContext(),Adminpannel.class);
+            startActivity(adminDash);
+        }
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
