@@ -106,11 +106,21 @@ public class HomeActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
+
+
+
         } else if (id == R.id.nav_gallery) {
+
+            Intent h = new Intent(HomeActivity.this,WelcomeActivity.class);
+            startActivity(h);
 
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
+
+
+            Intent t = new Intent(HomeActivity.this,Login.class);
+            startActivity(t);
 
         } else if (id == R.id.nav_share) {
 
