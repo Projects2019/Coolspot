@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Adminpannel"></activity>
+        <activity
+            android:name=".ViewActivity"
+            android:label="@string/title_activity_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Adminpannel" />
         <activity
             android:name=".ViewItems"
             android:label=""

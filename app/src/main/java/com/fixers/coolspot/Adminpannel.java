@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class Adminpannel extends AppCompatActivity {
 
-    private Button button1;
+    private Button button1,button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +29,18 @@ public class Adminpannel extends AppCompatActivity {
         });
 
 
+    button2 = (Button) findViewById(R.id.ViewProfile);
 
+        button2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                openUser();
+
+            }
+
+
+        });
 
     }
 
@@ -41,6 +52,14 @@ public class Adminpannel extends AppCompatActivity {
 
 
         }
+
+        public void openUser(){
+
+        Intent ViewItems =  new Intent(this,ViewActivity.class);
+        startActivity(ViewItems);
+        }
+
+
 
     }
 
