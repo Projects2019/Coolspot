@@ -98,38 +98,41 @@ public class HomeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if(id == R.id.admin_dash){
 
-            Intent adminDash = new Intent(getApplicationContext(),Adminpannel.class);
-            startActivity(adminDash);
+
+          if (id == R.id.admin_dash) {
+                // Handle the camera action
+
+
+
+
+                  Intent adminDash = new Intent(HomeActivity.this, TestView.class);
+                  startActivity(adminDash);
+
+
+
+              } else if (id == R.id.nav_gallery) {
+
+                Intent h = new Intent(HomeActivity.this, WelcomeActivity.class);
+                startActivity(h);
+
+            } else if (id == R.id.nav_slideshow) {
+
+            } else if (id == R.id.nav_manage) {
+
+
+                Intent t = new Intent(HomeActivity.this, Login.class);
+                startActivity(t);
+
+
+            } else if (id == R.id.nav_share) {
+
+            } else if (id == R.id.nav_send) {
+
+            } else if (id == R.id.admin_dash) {
+            }
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.closeDrawer(GravityCompat.START);
+            return true;
         }
-
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-
-
-
-        } else if (id == R.id.nav_gallery) {
-
-            Intent h = new Intent(HomeActivity.this,WelcomeActivity.class);
-            startActivity(h);
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-
-            Intent t = new Intent(HomeActivity.this,Login.class);
-            startActivity(t);
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
     }
-}
