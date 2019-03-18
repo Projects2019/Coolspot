@@ -25,7 +25,7 @@ public class HomeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
 
-      /*  new Handler().postDelayed(new Runnable(){
+      /*......  new Handler().postDelayed(new Runnable(){
             @Override
             public void run(){
                 Intent homeIntent = new Intent(HomeActivity.this,WelcomeActivity.class);
